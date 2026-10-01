@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Seth Cherui</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- SKILLS -->
+        <section class="container">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill"><span>HTML5</span><div class="bar"><div class="fill" style="width:80%"></div></div><em>80%</em></div>
+                <div class="skill"><span>CSS3</span><div class="bar"><div class="fill" style="width:65%"></div></div><em>65%</em></div>
+                <div class="skill"><span>JavaScript</span><div class="bar"><div class="fill" style="width:55%"></div></div><em>55%</em></div>
+                <div class="skill"><span>Git & GitHub</span><div class="bar"><div class="fill" style="width:60%"></div></div><em>60%</em></div>
+                <div class="skill"><span>Football Coaching</span><div class="bar"><div class="fill" style="width:90%"></div></div><em>90%</em></div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="container">
+            <h2>Projects</h2>
+
+            <div class="filters">
+                <button class="filter-btn" onclick="filterProjects('all')">All</button>
+                <button class="filter-btn" onclick="filterProjects('web')">Web</button>
+                <button class="filter-btn" onclick="filterProjects('school')">Coursework</button>
+            </div>
+
+            <div class="cards" id="projectCards">
+
+                <article class="card" data-cat="web">
+                    <img src="https://picsum.photos/seed/assign/400/200" alt="Student assignment management system">
+                    <h3>Student Assignment Management System</h3>
+                    <p>I am building a better system that helps students track, submit and organise their assignments in one place.</p>
+                    <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    <a href="https://github.com/kiptoemseth5-sketch" target="_blank">Coming Soon on GitHub</a>
+                </article>
+
+                <article class="card" data-cat="school">
+                    <img src="https://picsum.photos/seed/portfolio/400/200" alt="My portfolio website">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>This very site - my CSN 1101 coursework. A two-page portfolio with a projects page, live on GitHub Pages and Vercel.</p>
+                    <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    <a href="https://github.com/kiptoemseth5-sketch" target="_blank">View on GitHub</a>
+                </article>
+
+                <article class="card" data-cat="web">
+                    <img src="https://picsum.photos/seed/landing/400/200" alt="Practice landing page">
+                    <h3>Practice Landing Page</h3>
+                    <p>A beginner exercise page with a hero section and call-to-action buttons, built to practice CSS layout skills.</p>
+                    <div class="tags"><span>HTML</span><span>CSS</span></div>
+                    <a href="#">Coming Soon</a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="container" id="contact">
+            <h2>Contact Me</h2>
+            <p>Phone: 0112 796 437 | Email: <a href="mailto:kiptoemseth5@gmail.com">kiptoemseth5@gmail.com</a></p>
+            <p>
+                <a href="https://github.com/kiptoemseth5-sketch" target="_blank">GitHub</a> |
+                <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+            </p>
+
+            <form onsubmit="return checkForm()">
+                <input type="text" id="name" placeholder="Your name">
+                <input type="email" id="email" placeholder="Your email">
+                <textarea id="msg" rows="5" placeholder="Your message"></textarea>
+                <button type="submit" class="btn">Send Message</button>
+                <p id="formMsg"></p>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Seth Cherui</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
